@@ -1,6 +1,6 @@
 import os.path
 
-def search(sum_file : str = 'mols/sum', folder : str = 'mols/', boundaries : tuple = (3, 4), out : str = 'res.txt'):
+def search(sum_file : str = 'sum', folder : str = '', boundaries : tuple = (3, 4), out : str = 'res.txt'):
 
     with open(sum_file, 'r') as f:
         mols = f.read().split('\n')
